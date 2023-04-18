@@ -1,9 +1,11 @@
 ## Setup enviroment variables
 
 0. Add the required key-value pairs to your .env file.
+   ```
    NEWSAPI_API_KEY=<your_newsapi_api_key>
    OPENAI_API_KEY=<your_openai_api_key>
    OPENAI_ORGANIZATION=<your_openai_organization>
+   ```
 
 ## Installation Steps
 
