@@ -1,0 +1,4 @@
+openai
+newsapi-python
+autopep8
+python-dotenv
