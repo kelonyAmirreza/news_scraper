@@ -4,6 +4,7 @@
 
 ```
 python3 -m venv venv_python_news
+source venv_python_news/bin/activate
 ```
 
 2. Install the required packages from requirements.txt by running the following command:

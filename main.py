@@ -29,14 +29,15 @@ def init():
             raise EnvironmentError("NEWSAPI_API_KEY not set correctly")
         NEWSAPI_API_CLIENT = NewsApiClient(api_key=NEWSAPI_API_KEY)
 
-    elif len(argv) == 2 and argv[1] == "c":
+    else:
         """
         Importing the newsapi API key from the .env file and create the api client
         """
         print(2)
 
 
-def news_api_get_articles(keywords: List[str], sources: List[str] = None, domains: List[str] = None, daysBefore: int = 1, lang: str = "en", sort_by='relevancy') -> List[Dict]:
+def news_api_get_articles(keywords: List[str], sources: List[str] = None, domains: List[str] = None,
+                          daysBefore: int = 1, lang: str = "en", sort_by='relevancy') -> List[Dict]:
     """
     Returns a list of news articles related to the given search keyword.
 
